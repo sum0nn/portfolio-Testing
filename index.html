@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Suman Das</title>
+
+    <!--swiper css-->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--custom css-->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <!--header design-->
+    <header class="header">
+
+        <a href="#home" id="logo" class="typewriter-text"></a>
+
+        <script>
+            var i = 0;
+            var txt = '</folionook>';
+            var speed = 100;
+        
+            function typeWriter() {
+                var logoElement = document.getElementById("logo");
+                if (i < txt.length) {
+                    logoElement.innerText += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+        
+            // Call the function to start the typewriter effect
+            typeWriter();
+        </script>
+
+
+
+        <nav class="navbar">
+            <a style="margin-left: 6px;" href="#home">home()</a>
+            <a href="#about">about()</a>
+            <a href="#services">services()</a>
+            <a href="#portfolio">portfolio()</a>
+            <a style="margin-right: px;" href="#testimonial-container">blog&Contact()</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>&lt;/Suman Das&gt;</h1>
+            <p>I'm a passionate full-stack developer from India
+                dedicated to mastering FRONTEND & BACKEND
+                skills for seamless user experiences and delivering
+                cutting-edge solutions. I like to workout, code but
+                most importantly, I like to SQUISH CATS. 🐈</p>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/suman-das-35b3951b9/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/sum0nn" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+                <a href="https://letterboxd.com/sum0nn/" target="_blank" rel="noopener noreferrer"><i class='bx bx-movie-play'></i></a>
+                <a href="https://rateyourmusic.com/~Cadesx" target="_blank" rel="noopener noreferrer"><i class='bx bx-music'></i></a>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1oDJGjf6udhrskdamyMBWJJTQB9RC7W2X/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-download">download_CV ( )</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-code-curly'></i>
+                    <h3>Software<br>Engineer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-camera'></i>
+                    <h3>Photographer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-dumbbell'></i>
+                    <h3>Sports Player</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="./images/suman.jpg" alt="image of me">
+        </div>
+    </section>
+
+    <!--about section design-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/suman1.jpg" alt="another image of me">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">&lt;/about<span>Me</span>&gt;</h2>
+            <h3 style="margin-top: 10px;" >Hey There, I'm Here To Help Your Next Project!</h3>
+            <p>I am here to offer my assistance to anyone seeking support in the realm of web development, encompassing both frontend and backend expertise. Additionally, I am well-versed in computer science and programming in general. 
+                Please feel free to reach out if you have any questions or require guidance. I am more than happy to help in any way I can.</p>
+            <a style="margin-left: 40px;" href="#" class="btn">read_More ( )</a>  <!--CONNECT THIS TO PORTFOLIO SECTION-->      
+        </div>
+    </section>
+
+    <!--services-->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Frontend</h3>
+                <p>I am proficient in frontend development, with expertise in HTML, CSS (Bootstrap), 
+                    and JavaScript (React). I have a strong understanding of modern web development frameworks and libraries, as well as a keen eye for creating visually appealing and responsive user interfaces.
+
+                </p>
+                <a style="margin-top: 45px;" href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-terminal'></i>
+                <h3>Backend</h3>
+                <p>
+                    I am proficient in backend development, specializing in Node.js and Express.js. 
+                    Experienced in database management systems like MongoDB, Firebase and MySQL. Skills include designing scalable and secure backend solutions, restful API development, and server deployment.
+
+                </p>
+                <a style="margin-top: 45px;" href="#"  class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-code-curly'></i>
+                <h3>Programming Languages</h3>
+                <p>
+                    I am proficient in programming languages such as C, C++, Java, JavaScript and SQL.
+                    My expertise includes emphasizing best practices in optimal coding and problem-solving methodologies.
+                </p>
+                <a style="margin-top: 81px;" href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-git-pull-request'></i>
+                <h3>Miscellaneous</h3>
+                <p>
+                    Passionate about technology, I've explored web development and programming, gaining proficiency in GitHub, Git, Terminal, and Microsoft Office. 
+                    Eager to contribute and grow in the dynamic field of software development.</p>
+                <a style="margin-top: 70px;" href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--portfolio-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">My&nbsp;<span>Projects</span></h2>
+    
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./portfolio-images/drumkit.png" alt="">
+    
+                <div class="portfolio-layer">
+                    <h4>Drum Kit</h4>
+                    <p>A Drum Kit web application</p>
+                    <a href="https://github.com/sum0nn/Drum-Kit" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./portfolio-images/simongame.png" alt="">
+    
+                <div class="portfolio-layer">
+                    <h4>Simon Game</h4>
+                    <p>A Simon Game web application</p>
+                    <a href="https://github.com/sum0nn/The-Simon-Game" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./portfolio-images/simpledicegame.png" alt="">
+    
+                <div class="portfolio-layer">
+                    <h4>Dice Game</h4>
+                    <p>A Simple Dice Game web application</p>
+                    <a href="https://github.com/sum0nn/Simple-Dice-Game" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./portfolio-images/weather.jpg" alt="">
+    
+                <div class="portfolio-layer">
+                    <h4>Weather Now</h4>
+                    <p>A Weather web-based application</p>
+                    <a href="https://github.com/sum0nn/Weather-Now" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./portfolio-images/tinpanda.jpg" alt="">
+    
+                <div class="portfolio-layer">
+                    <h4>Tin Panda</h4>
+                    <p>Tinder for Pandas</p>
+                    <a href="https://github.com/sum0nn/Tin-Panda" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./portfolio-images/qrcode.jpg" alt="">
+    
+                <div class="portfolio-layer">
+                    <h4>QR code generator</h4>
+                    <p>A QR code generator for generating bar code for any given link</p>
+                    <a href="https://github.com/sum0nn/QR-Code-Generator" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--blog-->
+    <div class="testimonial-container" id="testimonial-container">
+        <h2 class="heading">Blog <span>Posting</span></h2>
+    
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./carousel-images/sunset.jpg" alt="">
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./carousel-images/sunset_bolevard.jpeg" alt="">
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./carousel-images/sea.jpg" alt="">
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./carousel-images/lightning1.JPG" alt="">
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./carousel-images/lightning2.JPG" alt="">
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./carousel-images/workingMan.JPG" alt="">
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./carousel-images/workingMan1.JPG" alt="">
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./carousel-images/crow.JPG" alt="">
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="./carousel-images/stalker.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <a style="display: flex; align-items: center; justify-content: center; width: 150px; text-decoration: none; padding: 10px; border: 2px solid orangered; margin: 0 auto; white-space: nowrap;" href="blog.html" class="btn">Read More&nbsp;<i class='bx bx-link-external'></i></a>
+    
+
+    <footer id="footer">
+        <div class="contact" id="contact">
+            <h3 style="font-size: 1.5rem;">Start a project?</h3>
+            <p>Interested in working together? We should queue up a chat. I'll buy the coffee. <i class='bx bxl-java'></i></p>
+            <a href="contact.html"><button>Let's do this!</button></a>
+        </div>
+
+        <div class="cols">
+            <div class="about-col">
+                <h3 style="font-size: 1.9rem; margin-top: 15px;">Suman Das</h3>
+                <p>FullStack Developer</p>
+                <p style="display: flex; margin-top: 60px; font-size: 10px;" >Copyright &copy; 2023 by Suman | All Rights Reserved.</p>
+            </div>
+
+            <div class="links-col">
+                <h4>Useful Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="links-col">
+                <h4>Social Media</h4>
+                <a href="#">Linkedin</a>
+                <a href="#">Github</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+            </div>
+
+            <div class="news-col">
+                <h4>NewsLetter</h4>
+                <p>Establish a direct connection, kindly share your email address with me.</p>
+
+                <form action="">
+                    <input type="email" placeholder="Your email address" />
+                    <button><i class='bx bxl-telegram'></i></button>
+                </form>
+
+            </div>
+          
+        </div>
+        
+    </footer>
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!--swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
